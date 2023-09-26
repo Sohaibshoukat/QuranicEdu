@@ -1,0 +1,24 @@
+.cardContainer{
+   margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.Row{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+
+}
+
+@media only screen and (max-width: 600px) {
+   .Row{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+   }
+  }
