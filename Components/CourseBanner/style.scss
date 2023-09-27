@@ -1,0 +1,170 @@
+.Banner {
+    background: url("../../public/assets/Images/BannerContact.webp");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left:50px;
+    .Section{
+        max-width: 50%;
+        margin: auto;
+        text-align: center;
+        h1{
+            font-size: 80px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        p{
+            font-size: 26px;
+            color: white;
+            margin-bottom: 20px;
+        }
+        .btn{
+            border-radius: 1100px;
+            border: none;
+            padding: 20px 30px;
+            background: linear-gradient(180deg, #3E4B75 0%, #192440 100%);
+            color:white;
+            cursor: pointer;
+            font-size: 26px;
+            font-weight: 700;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .Banner {
+        height:100vh;
+        .Section{
+            max-width: 70%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .Banner {
+        height:50vh;
+        .Section{
+            max-width: 65%;
+            margin: auto;
+            h1{
+                font-size: 70px;
+            }
+            p{
+                font-size: 24px;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .Banner {
+        height:50vh;
+        .Section{
+            max-width: 80%;
+            h1{
+                font-size: 60px;
+            }
+            p{
+                font-size: 24px;
+            }
+            .btn{
+                padding: 20px 20px;
+                color:white;
+                cursor: pointer;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .Banner {
+        height:50vh;
+        .Section{
+            max-width: 80%;
+            h1{
+                font-size: 60px;
+            }
+            p{
+                font-size: 24px;
+            }
+            .btn{
+                padding: 20px 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Banner {
+        height: 40vh;
+        padding:0px 20px;
+        padding-top: 10%;
+        .Section{
+            max-width: 90%;
+            h1{
+                font-size: 50px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 18px;
+            }
+            .btn{
+                padding: 10px 20px;
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .Banner {
+        height: 40vh;
+        padding:20px;
+        padding-top: 15%;
+        .Section{
+            max-width: 100%;
+            h1{
+                font-size: 35px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+            .btn{
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .Banner {
+        height: 30vh;
+        padding-top: 30%;
+        .Section{
+            max-width: 100%;
+            h1{
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            p{
+                font-size: 12px;
+            }
+            .btn{
+                padding: 10px 10px;
+                font-size: 12px;
+            }
+        }
+    }
+}

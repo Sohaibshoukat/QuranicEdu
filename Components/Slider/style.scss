@@ -1,0 +1,51 @@
+@import "../../public/assets/style/mixin.scss";
+
+.carousel {
+    margin-bottom: 50px;
+    max-width: 85%;
+    margin: auto;
+    position: relative;
+    .arrow {
+        font-size: 40px;
+        color: #3E4B75;
+        position: absolute;
+        top: 44%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1;
+        display: none;
+        @include md {
+            display: block;
+        }
+    }
+    .carouselLeftNav {
+        left: -70px;
+    }
+    @media screen and (max-width: 850px) {
+        .carouselLeftNav{
+            left: -30px;
+        }
+    }
+    .carouselRighttNav {
+        right: -70px;
+    }
+    @media screen and (max-width: 850px) {
+        .carouselRighttNav{
+            right: -50px;
+        }
+    }
+    .carouselItems {
+        display: flex;
+        gap: 50px;
+        overflow-y: hidden;
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 20px 20px;
+        @include md {
+            gap: 40px;
+            overflow: hidden;
+            margin: 0;
+            padding: 40px;
+        }
+    }
+}

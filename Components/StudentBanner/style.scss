@@ -1,0 +1,147 @@
+.StudnetContainer {
+    position: relative;
+    background: url("../../public/assets/Images/BackgroundAbout.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 100px 50px;
+    text-align: center;
+
+    .Content {
+        margin: auto;
+        width: 90%;
+        color: white;
+
+        h2 {
+            width: 70%;
+            margin: auto;
+            font-size: 40px;
+            margin-bottom: 50px;
+        }
+
+        .Data {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .Set {
+                text-align: center;
+
+                h5 {
+                    font-weight: 500;
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .StudnetContainer {
+        .Content {
+            h2 {
+                width: 75%;
+                margin: auto;
+                font-size: 35px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .StudnetContainer {
+        .Content {
+            h2 {
+                width: 75%;
+                margin: auto;
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+
+            .Data {
+                width: 90%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+
+                .Set {
+                    text-align: center;
+
+                    h3 {
+                        font-size: 35px;
+                    }
+
+                    h5 {
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .StudnetContainer {
+        padding: 50px 30px;
+        .Content {
+            width: 100%;
+
+            h2 {
+                width: 95%;
+                margin: auto;
+                font-size: 22px;
+                margin-bottom: 50px;
+            }
+
+            .Data {
+                width: 100%;
+
+                .Set {
+                    text-align: center;
+
+                    h3 {
+                        font-size: 25px;
+                    }
+
+                    h5 {
+                        font-size: 20px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .StudnetContainer {
+        .Content {
+            h2 {
+                width: 100%;
+                margin: auto;
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+
+            .Data {
+                width: 100%;
+
+                .Set {
+                    text-align: center;
+
+                    h3 {
+                        font-size: 18px;
+                    }
+
+                    h5 {
+                        font-size: 12px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+}
