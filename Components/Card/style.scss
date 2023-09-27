@@ -1,32 +1,43 @@
-.cardContainer{
+.cardContainer {
     width: 100%;
     position: relative;
-    .image{
+    border-radius: 10px;
+    height: 100%;
+    .image {
+        height: 100%;
         width: 100%;
-        img{
+        border-radius: 10px;
+
+        img {
+            height: 100%;
             width: 100%;
-            object-fit:contain ;
+            border-radius: 10px;
+            object-fit: cover;
         }
     }
-    .bar{
+
+    .bar {
         position: absolute;
         bottom: 15%;
-        background-color: #443E75;
+        background: linear-gradient(180deg, #3E4B75 0%, #192440 100%);
         width: -webkit-fill-available;
         display: flex;
         justify-content: flex-start;
         gap: 10px;
         align-items: center;
-        padding:5px 15px;
+        padding: 5px 15px;
         height: 60px;
-        h4{
+
+        h4 {
             color: white;
             font-size: 28px;
         }
-        .Logoimg{
+
+        .Logoimg {
             position: relative;
             min-width: 100px;
-            .logo{
+
+            .logo {
                 position: absolute;
                 width: 100%;
                 bottom: -20px;
@@ -36,20 +47,23 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .cardContainer{
-        .bar{
+    .cardContainer {
+        .bar {
             bottom: 10%;
             gap: 10px;
             align-items: center;
-            padding:5px 20px;
+            padding: 5px 20px;
             height: 60px;
-            h4{
+
+            h4 {
                 font-size: 22px;
             }
-            .Logoimg{
+
+            .Logoimg {
                 position: relative;
                 min-width: 90px;
-                .logo{
+
+                .logo {
                     width: 100%;
                 }
             }
@@ -58,19 +72,22 @@
 }
 
 @media screen and (max-width: 850px) {
-    .cardContainer{
-        .bar{
+    .cardContainer {
+        .bar {
             bottom: 10%;
             gap: 5px;
             height: 50px;
-            h4{
+
+            h4 {
                 color: white;
                 font-size: 18px;
             }
-            .Logoimg{
+
+            .Logoimg {
                 position: relative;
                 min-width: 70px;
-                .logo{
+
+                .logo {
                     width: 100%;
                     bottom: -12px;
                 }
@@ -80,19 +97,22 @@
 }
 
 @media screen and (max-width: 780px) {
-    .cardContainer{
-        .bar{
+    .cardContainer {
+        .bar {
             bottom: 20%;
             gap: 10px;
             height: 80px;
-            h4{
+
+            h4 {
                 color: white;
                 font-size: 24px;
             }
-            .Logoimg{
+
+            .Logoimg {
                 position: relative;
                 min-width: 100px;
-                .logo{
+
+                .logo {
                     width: 100%;
                     bottom: -12px;
                 }
@@ -102,21 +122,24 @@
 }
 
 @media screen and (max-width: 550px) {
-    .cardContainer{
-        .bar{
-            padding:0px 15px;
+    .cardContainer {
+        .bar {
+            padding: 0px 15px;
             bottom: 10%;
             gap: 5px;
             height: 50px;
-            h4{
+
+            h4 {
                 color: white;
                 font-size: 16px;
                 font-weight: 400;
             }
-            .Logoimg{
+
+            .Logoimg {
                 position: relative;
                 min-width: 65px;
-                .logo{
+
+                .logo {
                     width: 100%;
                     bottom: -8px;
                 }
@@ -126,21 +149,24 @@
 }
 
 @media screen and (max-width: 300px) {
-    .cardContainer{
-        .bar{
-            padding:5px 15px;
+    .cardContainer {
+        .bar {
+            padding: 5px 15px;
             bottom: 15%;
             gap: 10px;
             height: 50px;
-            h4{
+
+            h4 {
                 color: white;
                 font-size: 20px;
                 font-weight: 700;
             }
-            .Logoimg{
+
+            .Logoimg {
                 position: relative;
                 min-width: 80px;
-                .logo{
+
+                .logo {
                     width: 100%;
                     bottom: -10px;
                 }

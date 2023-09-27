@@ -3,6 +3,10 @@
 *{
     margin:0;
     padding: 0;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+body{
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 h1,h2,h3,h4,h5,h6,a,li{
@@ -35,6 +39,25 @@ p{
     font-weight: 400;
 }
 
+.ContainerStory{
+    padding: 100px 50px;
+    width: 80%;
+    margin: auto;
+    h2{
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    p{
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+}
+
 @media screen and (min-width: 1024px) {
     /* Adjust font sizes and other styles for desktop screens */
     h1 {
@@ -63,6 +86,43 @@ p{
 
     p {
         font-size: 24px;
+    }
+    .ContainerStory{
+        padding: 50px;
+        width: 90%;
+            h2{
+                text-align: center;
+                width: 70%;
+                margin: auto;
+                margin-bottom: 40px;
+            }
+            p{
+                text-align: center;
+                width: 80%;
+                margin: auto;
+                margin-top: -30px;
+                margin-bottom: 30px;
+            }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .ContainerStory{
+        padding: 50px 10px;
+        width: 95%;
+        h2{
+            text-align: center;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 40px;
+        }
+        p{
+            text-align: center;
+            width: 80%;
+            margin: auto;
+            margin-top: -30px;
+            margin-bottom: 30px;
+        }
     }
 }
 
@@ -125,5 +185,29 @@ p{
 
     p {
         font-size: 16px;
+    }
+    .ContainerStory{
+        padding:50px 10px;
+        width: 90%;
+        h2{
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .ContainerStory{
+        padding:50px 10px;
+        width: 90%;
+        h2{
+            text-align: left;
+            font-size: 22px;
+            width: 100%;
+        }
+        p{
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+        }
     }
 }

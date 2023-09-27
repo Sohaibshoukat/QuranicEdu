@@ -1,0 +1,93 @@
+@import "../../public/assets/style/mixin.scss";
+
+.TestimonialCard {
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 9px #00000040;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    flex-shrink: 0;
+    transition: all 0.3s ease-in-out 0s;
+
+    @include md {
+        width: calc(30% - 15px);
+    }
+
+    @include lg {
+        width: calc(45% - 16px);
+    }
+
+    p {
+        font-size: 18px;
+        margin: 0px;
+    }
+
+    .profile {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+
+        .Profileimg {
+            width: 75px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: #3E4B75;
+        }
+    }
+}
+.TestimonialCard:hover{
+    transform: translate(-10px,-10px);
+}
+
+@media screen and (max-width: 1024px) {
+    .TestimonialCard {
+        width: calc(55% - 16px);
+
+        p {
+            font-size: 18px;
+        }
+
+        .profile {
+            .Profileimg {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .TestimonialCard {
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .TestimonialCard {
+        width: 300px;
+        padding: 20px 10px;
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    .TestimonialCard {
+        width: 200px;
+        padding: 10px;
+        p {
+            font-size: 12px;
+        }
+    }
+}

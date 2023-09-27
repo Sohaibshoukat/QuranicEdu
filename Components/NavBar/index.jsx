@@ -36,9 +36,11 @@ const NavBar = () => {
     return (
         <div className="Main">
             <div className="container">
+                <Link href={"/"}>
                 <div className="logo">
                     <img src="./logo.webp" alt="" />
                 </div>
+                </Link>
                 {screenWidth > 550 ?
                     (
                         <div className="navbar">
