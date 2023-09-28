@@ -15,7 +15,7 @@ const CardContainer = () => {
       </div>
       <div className="CourseContainer">
       {CourseOverview.map((item)=>(
-        <Card title={item.Name} imageurl={item.Image}/>
+        <Card title={item.Name} imageurl={item.Image} overView={item.Overview}/>
       ))}
       </div>
     </div>
