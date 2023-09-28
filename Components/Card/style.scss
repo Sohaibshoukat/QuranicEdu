@@ -58,6 +58,7 @@
     transform-style: preserve-3d;
     cursor: pointer;
     transform: rotateY(180deg);
+    background-color: black;
 
     .back {
       display: flex;
@@ -71,19 +72,18 @@
       gap: 10px;
       padding: 5px 15px;
       height: 60px;
+      margin-top: 1.5rem;
 
       transform: rotateY(180deg);
 
       color: white;
-    }
+      
 
-    .image {
-      opacity: 80%;
     }
 
     .bar {
       backface-visibility: hidden;
-      transition: 1500ms ease-out;
+      
     }
   }
 }
