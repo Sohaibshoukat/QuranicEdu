@@ -13,7 +13,7 @@ export const Courses={
     Title:"Courses",
     Links:[
         "Norani Qaida",
-        "Nazrah Qaida",
+        "Nazrah Quran",
         "Hifzul Quran",
         "Namaz",
         "Six Kalmas",
@@ -24,7 +24,7 @@ export const Courses={
 
 export const CoursesName=[
     "Norani Qaida",
-    "Nazrah Qaida",
+    "Nazrah Quran",
     "Hifzul Quran with Tajweed",
     "Namaz",
     "Six Kalmas",

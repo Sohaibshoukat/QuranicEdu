@@ -12,7 +12,7 @@ const index = () => {
     window.open(whatsappDeepLink, '_blank');
   };
   return (
-    <div className="Banner">
+    <div className="CourseBanner">
       <div className="Section">
         <h1>Courses</h1>
         <p>The most superior among you (Muslims)  are those who learn the Quran  and teach  it. </p>
