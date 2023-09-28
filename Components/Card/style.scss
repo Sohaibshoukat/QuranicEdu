@@ -1,176 +1,218 @@
 .cardContainer {
-    width: 100%;
-    position: relative;
-    border-radius: 10px;
-    height: 100%;
-    .image {
-        height: 100%;
-        width: 100%;
-        border-radius: 10px;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  height: 100%;
 
-        img {
-            height: 100%;
-            width: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-        }
+  .back {
+    display: none;
+    backface-visibility: hidden;
+  }
+
+  .image {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+
+  .bar {
+    position: absolute;
+    bottom: 15%;
+    background: linear-gradient(180deg, #3e4b75 0%, #192440 100%);
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    padding: 5px 15px;
+    height: 60px;
+
+    h4 {
+      color: white;
+      font-size: 28px;
+    }
+
+    .Logoimg {
+      position: relative;
+      min-width: 100px;
+
+      .logo {
+        position: absolute;
+        width: 100%;
+        bottom: -20px;
+      }
+    }
+  }
+}
+
+.cardFlip:hover {
+  .cardContainer {
+    transition: transform 600ms;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transform: rotateY(180deg);
+
+    .back {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      position: absolute;
+      top: 15%;
+      width: -webkit-fill-available;
+      gap: 10px;
+      padding: 5px 15px;
+      height: 60px;
+
+      transform: rotateY(180deg);
+
+      color: white;
+    }
+
+    .image {
+      opacity: 80%;
     }
 
     .bar {
-        position: absolute;
-        bottom: 15%;
-        background: linear-gradient(180deg, #3E4B75 0%, #192440 100%);
-        width: -webkit-fill-available;
-        display: flex;
-        justify-content: flex-start;
-        gap: 10px;
-        align-items: center;
-        padding: 5px 15px;
-        height: 60px;
-
-        h4 {
-            color: white;
-            font-size: 28px;
-        }
-
-        .Logoimg {
-            position: relative;
-            min-width: 100px;
-
-            .logo {
-                position: absolute;
-                width: 100%;
-                bottom: -20px;
-            }
-        }
+      backface-visibility: hidden;
+      transition: 1500ms ease-out;
     }
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    .cardContainer {
-        .bar {
-            bottom: 10%;
-            gap: 10px;
-            align-items: center;
-            padding: 5px 20px;
-            height: 60px;
+  .cardContainer {
+    .bar {
+      bottom: 10%;
+      gap: 10px;
+      align-items: center;
+      padding: 5px 20px;
+      height: 60px;
 
-            h4 {
-                font-size: 22px;
-            }
+      h4 {
+        font-size: 22px;
+      }
 
-            .Logoimg {
-                position: relative;
-                min-width: 90px;
+      .Logoimg {
+        position: relative;
+        min-width: 90px;
 
-                .logo {
-                    width: 100%;
-                }
-            }
+        .logo {
+          width: 100%;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 850px) {
-    .cardContainer {
-        .bar {
-            bottom: 10%;
-            gap: 5px;
-            height: 50px;
+  .cardContainer {
+    .bar {
+      bottom: 10%;
+      gap: 5px;
+      height: 50px;
 
-            h4 {
-                color: white;
-                font-size: 18px;
-            }
+      h4 {
+        color: white;
+        font-size: 18px;
+      }
 
-            .Logoimg {
-                position: relative;
-                min-width: 70px;
+      .Logoimg {
+        position: relative;
+        min-width: 70px;
 
-                .logo {
-                    width: 100%;
-                    bottom: -12px;
-                }
-            }
+        .logo {
+          width: 100%;
+          bottom: -12px;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 780px) {
-    .cardContainer {
-        .bar {
-            bottom: 20%;
-            gap: 10px;
-            height: 80px;
+  .cardContainer {
+    .bar {
+      bottom: 20%;
+      gap: 10px;
+      height: 80px;
 
-            h4 {
-                color: white;
-                font-size: 24px;
-            }
+      h4 {
+        color: white;
+        font-size: 24px;
+      }
 
-            .Logoimg {
-                position: relative;
-                min-width: 100px;
+      .Logoimg {
+        position: relative;
+        min-width: 100px;
 
-                .logo {
-                    width: 100%;
-                    bottom: -12px;
-                }
-            }
+        .logo {
+          width: 100%;
+          bottom: -12px;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 550px) {
-    .cardContainer {
-        .bar {
-            padding: 0px 15px;
-            bottom: 10%;
-            gap: 5px;
-            height: 50px;
+  .cardContainer {
+    .bar {
+      padding: 0px 15px;
+      bottom: 10%;
+      gap: 5px;
+      height: 50px;
 
-            h4 {
-                color: white;
-                font-size: 16px;
-                font-weight: 400;
-            }
+      h4 {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+      }
 
-            .Logoimg {
-                position: relative;
-                min-width: 65px;
+      .Logoimg {
+        position: relative;
+        min-width: 65px;
 
-                .logo {
-                    width: 100%;
-                    bottom: -8px;
-                }
-            }
+        .logo {
+          width: 100%;
+          bottom: -8px;
         }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 300px) {
-    .cardContainer {
-        .bar {
-            padding: 5px 15px;
-            bottom: 15%;
-            gap: 10px;
-            height: 50px;
+  .cardContainer {
+    .bar {
+      padding: 5px 15px;
+      bottom: 15%;
+      gap: 10px;
+      height: 50px;
 
-            h4 {
-                color: white;
-                font-size: 20px;
-                font-weight: 700;
-            }
+      h4 {
+        color: white;
+        font-size: 20px;
+        font-weight: 700;
+      }
 
-            .Logoimg {
-                position: relative;
-                min-width: 80px;
+      .Logoimg {
+        position: relative;
+        min-width: 80px;
 
-                .logo {
-                    width: 100%;
-                    bottom: -10px;
-                }
-            }
+        .logo {
+          width: 100%;
+          bottom: -10px;
         }
+      }
     }
+  }
 }
