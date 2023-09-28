@@ -1,10 +1,11 @@
 import React from 'react'
+import CommonBanner from "@/Components/CommonBanner"
 
 const page = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <CommonBanner Title="About Us" />
+    </>
   )
 }
 
