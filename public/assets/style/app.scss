@@ -35,7 +35,7 @@ h6{
 
 p{
     font-family: 'Raleway', sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
 }
 
@@ -53,8 +53,22 @@ p{
         text-align: center;
         width: 60%;
         margin: auto;
-        margin-top: -30px;
+        // margin-top: -30px;
         margin-bottom: 30px;
+    }
+    .TextSection{
+        max-width: 80%;
+        margin: auto;
+        h5{
+            margin-bottom:20px;
+        }
+        p{
+            margin: 0px;
+            max-width:70%;
+            margin: auto;
+            letter-spacing: 3px;
+            word-spacing: 4px;
+        }
     }
 }
 
@@ -85,7 +99,7 @@ p{
     }
 
     p {
-        font-size: 24px;
+        font-size: 20px;
     }
     .ContainerStory{
         padding: 50px;
@@ -100,8 +114,21 @@ p{
                 text-align: center;
                 width: 80%;
                 margin: auto;
-                margin-top: -30px;
                 margin-bottom: 30px;
+            }
+            .TextSection{
+                max-width: 85%;
+                margin: auto;
+                h5{
+                    margin-bottom:20px;
+                }
+                p{
+                    margin: 0px;
+                    max-width:70%;
+                    margin: auto;
+                    letter-spacing: 3px;
+                    word-spacing: 4px;
+                }
             }
     }
 }
@@ -120,8 +147,15 @@ p{
             text-align: center;
             width: 80%;
             margin: auto;
-            margin-top: -30px;
             margin-bottom: 30px;
+        }
+        .TextSection{
+            max-width: 85%;
+            p{
+                max-width:90%;
+                letter-spacing: 2px;
+                word-spacing: 2px;
+            }
         }
     }
 }
@@ -190,7 +224,22 @@ p{
         padding:50px 10px;
         width: 90%;
         h2{
+            margin-bottom: 10px;
             width: 90%;
+        }
+        .TextSection{
+            max-width: 95%;
+            h5{
+                margin-bottom: 10px;
+            }
+            p{
+                text-align: left;
+                max-width:100%;
+                margin: 0px;
+                margin-left: 10px;
+                letter-spacing: 0px;
+                word-spacing: 1px;
+            }
         }
     }
 }

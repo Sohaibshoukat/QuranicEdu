@@ -54,6 +54,8 @@
             align-items: flex-start;
             gap: 15%;
             .Card{
+                width: 400px;
+                height: 400px;
                 flex-basis: 30%;
             }
             .contentData{

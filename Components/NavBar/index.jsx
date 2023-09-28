@@ -37,9 +37,9 @@ const NavBar = () => {
         <div className="Main">
             <div className="container">
                 <Link href={"/"}>
-                <div className="logo">
-                    <img src="./logo.webp" alt="" />
-                </div>
+                    <div className="logo">
+                        <img src="./logo.webp" alt="" />
+                    </div>
                 </Link>
                 {screenWidth > 550 ?
                     (
@@ -52,8 +52,12 @@ const NavBar = () => {
                                     <li>Course</li>
                                 </Link>
                                 <li>Instructor</li>
-                                <li>Contact</li>
-                                <li>About Us</li>
+                                <Link href={"/Contact"}>
+                                    <li>Contact</li>
+                                </Link>
+                                <Link href={"/About"}>
+                                    <li>About Us</li>
+                                </Link>
                             </ul>
                         </div>
                     )
@@ -76,8 +80,12 @@ const NavBar = () => {
                             <li>Course</li>
                         </Link>
                         <li>Instructor</li>
-                        <li>Contact</li>
-                        <li>About Us</li>
+                        <Link href={"/Contact"}>
+                            <li>Contact</li>
+                        </Link>
+                        <Link href={"/About"}>
+                            <li>About Us</li>
+                        </Link>
                     </ul>
                 </div>
             }

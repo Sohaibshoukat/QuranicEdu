@@ -1,5 +1,5 @@
-.CourseBanner {
-    background: url("../../public/assets/Images/BannerContact.webp");
+.CommonBanner {
+    background: url("../../public/assets/Images/Banner.webp");
     height: 100vh;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -21,21 +21,11 @@
             color: white;
             margin-bottom: 20px;
         }
-        .btn{
-            border-radius: 1100px;
-            border: none;
-            padding: 20px 30px;
-            background: linear-gradient(180deg, #3E4B75 0%, #192440 100%);
-            color:white;
-            cursor: pointer;
-            font-size: 26px;
-            font-weight: 700;
-        }
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .CourseBanner {
+    .CommonBanner {
         height:100vh;
         .Section{
             max-width: 70%;
@@ -46,7 +36,7 @@
 }
 
 @media screen and (max-width: 950px) {
-    .CourseBanner {
+    .CommonBanner {
         height:50vh;
         .Section{
             max-width: 65%;
@@ -63,7 +53,7 @@
 }
 
 @media screen and (max-width: 850px) {
-    .CourseBanner {
+    .CommonBanner {
         height:50vh;
         .Section{
             max-width: 80%;
@@ -73,19 +63,12 @@
             p{
                 font-size: 24px;
             }
-            .btn{
-                padding: 20px 20px;
-                color:white;
-                cursor: pointer;
-                font-size: 24px;
-                font-weight: 700;
-            }
         }
     }
 }
 
 @media screen and (max-width: 780px) {
-    .CourseBanner {
+    .CommonBanner {
         height:50vh;
         .Section{
             max-width: 80%;
@@ -104,7 +87,7 @@
 }
 
 @media screen and (max-width: 550px) {
-    .CourseBanner {
+    .CommonBanner {
         height: 40vh;
         padding:0px 20px;
         padding-top: 10%;
@@ -126,7 +109,7 @@
 }
 
 @media screen and (max-width: 380px) {
-    .CourseBanner {
+    .CommonBanner {
         height: 40vh;
         padding:20px;
         padding-top: 15%;
@@ -149,7 +132,7 @@
 }
 
 @media screen and (max-width: 300px) {
-    .CourseBanner {
+    .CommonBanner {
         height: 30vh;
         padding-top: 30%;
         .Section{
