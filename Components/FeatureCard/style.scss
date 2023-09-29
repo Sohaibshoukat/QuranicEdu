@@ -1,0 +1,156 @@
+.FeatureCardcontainer{
+
+    background-color: rgba(25, 36, 64, 0.70);
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    padding:10%;
+        
+    .row{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10%;
+      
+
+        p{
+            color: white;
+            margin-left: 10%;
+        }
+
+        img{
+           
+            width: 30px;
+            height: 30px;
+        }
+
+    
+    
+
+}
+
+.white-line {
+    border-top: 2px solid white;
+    width: 100%;
+    height: 10px;
+    color: white;
+  }
+  
+
+  
+  .Cardbtn{
+        text-align: center;
+
+        .Featurebtn{
+        
+        margin-top: 5%;
+        border-radius: 1100px;
+        border: none;
+        // margin-left: 15%;
+        // margin-right: 15%;
+        //padding: 20px 30px;
+        background: linear-gradient(180deg, #3E4B75 0%, #192440 100%);
+        color:white;
+        cursor: pointer;
+        font-size: 1.25rem;
+        font-weight: 700;
+        width: 200px;
+        height: 50px;
+        align-items: center;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .FeatureCardcontainer{
+
+
+        width: 250px;
+        height: 250px;
+        
+    
+    
+        .row{
+           
+    
+            p{
+                
+                font-size: small;
+            }
+    
+            img{
+               
+                width: 20px;
+                height: 20px;
+            }
+    
+        
+        
+    
+    }
+
+ 
+    .Cardbtn{
+         
+            .btn{    
+            width: 150px;
+            height: 40px;
+            font-size: small;
+            font-weight: 500;
+            //margin-left: 10%;
+            //margin-right: 10%;
+            }
+            
+    }
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+
+    .FeatureCardcontainer{
+
+
+        width: 200px;
+        height: 220px;
+        
+    
+    
+        .row{
+           
+    
+            p{
+                
+                font-size: small;
+            }
+    
+            img{
+               
+                width: 20px;
+                height: 20px;
+            }
+    
+        
+        
+    
+    }
+
+ 
+    .Cardbtn{
+         
+            .btn{    
+            width: 100px;
+            height: 30px;
+            font-size: small;
+            font-weight: 400;
+            // margin-left: 10%;
+            // margin-right: 10%;
+            }
+        }
+            
+        
+    }
+  }
