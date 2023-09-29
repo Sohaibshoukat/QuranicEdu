@@ -1,0 +1,70 @@
+.FeatureContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 35rem;
+    width:100% ;
+    background: url("../../public/assets/Images/BackgroundAbout.webp");
+    .imageContainer{
+        transform: rotate(45deg);
+        
+
+        img{
+            border-radius: 10%;
+        }
+        
+    }
+
+    .Features{
+        
+        
+        h2{
+            color: white;
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2%;
+            
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 910px) {
+  
+    .FeatureContainer{
+    
+        flex-direction: column;
+        justify-content: space-around;
+        height: 65rem;
+    
+        .imageContainer{
+            padding-top: 15%;
+        }
+    .Features{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+  }
+}
+  
+
+@media screen and (max-width: 550px){
+    .FeatureContainer{
+        align-items: center;
+        justify-content: center;
+        height: 50rem;
+    
+    .imageContainer{
+
+        width: 60%;
+        img{
+            width: 90%;
+        }
+     
+    }
+}
+
+  }
