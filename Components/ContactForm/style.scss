@@ -5,6 +5,17 @@
     background-size: 100% 100%;
     padding: 100px 50px;
     text-align: center;
+    .AlerBox {
+        position: fixed;
+        top: 40%;
+        right: 0;
+        transition: ease-in-out 5s;
+        z-index: 10000;
+        width: 300px;
+        background-color: #c6f6d5;
+        border-radius: 5px;
+        padding: 20px 10px
+    }
 
     .Content {
         margin: auto;
@@ -12,6 +23,7 @@
         color: white;
 
         h2 {
+            color: white;
             margin-bottom: 20px;
         }
 
@@ -19,7 +31,7 @@
             margin-bottom: 20px;
         }
 
-        .form {
+        form {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -130,7 +142,7 @@
                 margin-bottom: 20px;
             }
 
-            .form {
+            form {
                 width: 50%;
 
                 input,
@@ -238,7 +250,7 @@
 
         .Content {
             width: 100%;
-            .form {
+            form {
                 width: 70%;
 
                 input,
@@ -341,7 +353,7 @@
                 font-size: 14px;
             }
 
-            .form {
+            form {
                 width: 100%;
 
                 input,
@@ -446,7 +458,7 @@
                 font-size: 12px;
             }
 
-            .form {
+            form {
                 width: 100%;
 
                 input,

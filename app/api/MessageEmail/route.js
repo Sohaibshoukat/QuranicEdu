@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 
 export async function POST(request) {
   try {
-    const { name, email, gender, teacherGender, country, course } = await request.json();
+    const { name, email, message} = await request.json();
 
 
     const transporter = nodemailer.createTransport({
@@ -20,21 +20,8 @@ export async function POST(request) {
     const mailOptions = {
       from: email,
       to: 'qarikhalid.quranicedu@gmail.com',
-      subject: `${course} Enrollment`,
-      text: `Dear Quranic Edu,
-      Please find the details below:
-
-      - Name: ${name}
-      - Email: ${email}
-      - Gender: ${gender}
-      - Country: ${country}
-      - Teacher Gender: ${teacherGender}
-      - Course: ${course}
-
-      Looking forward to your Response.
-
-      Best regards,
-      ${name}`,
+      subject: `${name} Message`,
+      text: `${message}`,
     };
     await transporter.sendMail(mailOptions);
 

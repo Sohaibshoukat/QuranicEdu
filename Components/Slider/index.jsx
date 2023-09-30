@@ -6,10 +6,12 @@ import {
     BsFillArrowRightCircleFill,
 } from "react-icons/bs";
 import { Testimonial } from "../../Content/index"
+import { CourseOverview } from "../../Content/index"
 import TestimonialCard from "../TestimonialCard"
+import Card from "@/Components/Card"
 import "./style.scss"
 
-const index = () => {
+const index = ({ type }) => {
     const carouselContainer = useRef(null);
 
     const Navigation = (dir) => {
@@ -36,11 +38,17 @@ const index = () => {
                 onClick={() => Navigation("right")}
             />
             <div className="carouselItems" ref={carouselContainer}>
-                {Testimonial?.map((item) => {
-                    return (
-                        <TestimonialCard item={item}/>
-                    );
-                })}
+                {type == "Testimonial" ?
+                    Testimonial?.map((item) => {
+                        return (
+                            <TestimonialCard item={item} />
+                        );
+                    }) : (CourseOverview.map((item) => (
+                        <div className="card">
+                            <Card title={item.Name} imageurl={item.Image} overView={item.Overview} ID={item.ID} />
+                        </div>
+                    ))
+                    )}
             </div>
         </div>
     )
