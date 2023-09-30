@@ -8,6 +8,15 @@ const index = () => {
     const phoneNumber = '+923317388258';
     const message = 'Assalam-o-Alaikum, I want to learn quran';
     const whatsappDeepLink = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}`;
+    const emailAddress = 'qarikhalid.quranicedu@gmail.com';
+    const emailSubject = 'Inquiry about Quran courses';
+    const emailBody = 'Assalam-o-Alaikum, I am interested in learning Quranic courses.';
+
+    // Function to handle the email button click
+    const handleEmailButtonClick = () => {
+        const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+        window.location.href = mailtoLink;
+    };
 
     // Function to handle the button click
     const handleButtonClick = () => {
@@ -26,7 +35,9 @@ const index = () => {
                         <h4>{Links.Title}</h4>
                         <ul>
                             {Links.Links.map((item, index) => (
-                                <li key={index}>{item}</li>
+                                <Link href={item.Link}>
+                                    <li key={index}>{item.Name}</li>
+                                </Link>
                             ))}
                         </ul>
                     </div>
@@ -34,7 +45,9 @@ const index = () => {
                         <h4>{Courses.Title}</h4>
                         <ul>
                             {Courses.Links.map((item) => (
-                                <li>{item}</li>
+                                <Link href={item.Link}>
+                                    <li key={index}>{item.Name}</li>
+                                </Link>
                             ))}
                         </ul>
                     </div>
@@ -42,7 +55,7 @@ const index = () => {
                         <h4>Contact us</h4>
                         <ul>
                             <li className='contact'>
-                                <div className="image">
+                                <div className="image" onClick={handleEmailButtonClick}>
                                     <img src="../assets/Images/gmail.webp" alt="" />
                                 </div>
                                 qarikhalid.quranicedu@gmail.com

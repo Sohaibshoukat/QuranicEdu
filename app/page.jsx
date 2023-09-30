@@ -13,7 +13,7 @@ export default function Home() {
       <ParaText />
       <div className="ContainerStory">
         <h2>Our Happy Students Around the World!</h2>
-        <Slider/>
+        <Slider type="Testimonial"/>
       </div>
       <StudentBanner />
       <div className="ContainerStory">

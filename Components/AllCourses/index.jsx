@@ -1,11 +1,11 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import "./style.scss"
-import { CourseOverview } from "@/Content/index"
+import { CourseOverview, OurTeachers } from "@/Content/index"
 import Card from "@/Components/Card"
 import Link from 'next/link'
 
-const index = () => {
+const index = ({ type }) => {
     const [screenWidth, setScreenWidth] = useState(null);
 
     useEffect(() => {
@@ -29,9 +29,91 @@ const index = () => {
 
     return (
         <div className="containerCourse">
-            {CourseOverview.map((item, index) => {
-                if (screenWidth > 550) {
-                    if (index % 2 == 0) {
+            {type == "Teachers" ? (
+                OurTeachers.map((item, index) => {
+                    if (screenWidth > 550) {
+                        if (index % 2 == 0) {
+                            return (
+                                <div className="CourseContain containright">
+                                    <div className="ImageCard">
+                                        <img src="../assets/Images/Namaz.webp" alt="" />
+                                    </div>
+                                    <div className="contentData">
+                                        <h3>{item.Name}</h3>
+                                        <p>{item.Description}</p>
+                                    </div>
+                                </div>
+                            )
+                        } else {
+                            return (
+                                <div className="CourseContain containleft">
+                                    <div className="contentData">
+                                        <h3>{item.Name}</h3>
+                                        <p>{item.Description}</p>
+                                    </div>
+                                    <div className="ImageCard">
+                                        <img src="../assets/Images/Namaz.webp" alt="" />
+                                    </div>
+                                </div>
+                            )
+                        }
+                    } else {
+                        return (
+                            <div className="CourseContain containright">
+                                <div className="ImageCard">
+                                    <img src="../assets/Images/Namaz.webp" alt="" />
+                                </div>
+                                <div className="contentData">
+                                    <h3>{item.Name}</h3>
+                                    <p>{item.Description}</p>
+
+                                </div>
+                            </div>
+                        )
+                    }
+                })
+            )
+                :
+                CourseOverview.map((item, index) => {
+                    if (screenWidth > 550) {
+                        if (index % 2 == 0) {
+                            return (
+                                <div className="CourseContain containright">
+                                    <div className="Card">
+                                        <Card title={item.Name} imageurl={item.Image} overView={item.Overview} ID={item.ID} />
+                                    </div>
+                                    <div className="contentData">
+                                        <h3>{item.Name}</h3>
+                                        {item.PointDescription.map(item2 => (
+                                            <p>{item2}</p>
+                                        ))
+                                        }
+                                        <Link href={"/Enroll"}>
+                                            <button className="btn">Enroll Know</button>
+                                        </Link>
+                                    </div>
+                                </div>
+                            )
+                        } else {
+                            return (
+                                <div className="CourseContain containleft">
+                                    <div className="contentData">
+                                        <h3>{item.Name}</h3>
+                                        {item.PointDescription.map(item2 => (
+                                            <p>{item2}</p>
+                                        ))
+                                        }
+                                        <Link href={"/Enroll"}>
+                                            <button className="btn">Enroll Know</button>
+                                        </Link>
+                                    </div>
+                                    <div className="Card">
+                                        <Card title={item.Name} imageurl={item.Image} overView={item.Overview} ID={item.ID} />
+                                    </div>
+                                </div>
+                            )
+                        }
+                    } else {
                         return (
                             <div className="CourseContain containright">
                                 <div className="Card">
@@ -49,45 +131,9 @@ const index = () => {
                                 </div>
                             </div>
                         )
-                    } else {
-                        return (
-                            <div className="CourseContain containleft">
-                                <div className="contentData">
-                                    <h3>{item.Name}</h3>
-                                    {item.PointDescription.map(item2 => (
-                                        <p>{item2}</p>
-                                    ))
-                                    }
-                                    <Link href={"/Enroll"}>
-                                        <button className="btn">Enroll Know</button>
-                                    </Link>
-                                </div>
-                                <div className="Card">
-                                    <Card title={item.Name} imageurl={item.Image} overView={item.Overview} />
-                                </div>
-                            </div>
-                        )
                     }
-                } else {
-                    return (
-                        <div className="CourseContain containright">
-                            <div className="Card">
-                                <Card title={item.Name} imageurl={item.Image} overView={item.Overview} />
-                            </div>
-                            <div className="contentData">
-                                <h3>{item.Name}</h3>
-                                {item.PointDescription.map(item2 => (
-                                    <p>{item2}</p>
-                                ))
-                                }
-                                <Link href={"/Enroll"}>
-                                        <button className="btn">Enroll Know</button>
-                                </Link>
-                            </div>
-                        </div>
-                    )
-                }
-            })}
+                })
+            }
         </div>
     )
 }

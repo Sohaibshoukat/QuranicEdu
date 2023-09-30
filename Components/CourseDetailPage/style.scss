@@ -31,3 +31,112 @@
         }
     }
 }
+
+.OverviewContainer{
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+    .VideoFrame{
+        flex-basis: 40%;
+        iframe{
+            width: 100%;
+        }
+    }
+    .OverviewContent{
+        flex-basis: 60%;
+        p{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.DetailContainer{
+    max-width: 80%;
+    margin: auto;
+}
+
+@media screen and (max-width:1024px){
+    .mainDescription{
+        max-width: 90%;
+        gap: 5%;
+        .DescriptionContainer{
+            h4{
+                margin-bottom: 10px;
+            }
+            p{
+                width: 90%;
+                margin-left: 5px;
+            }
+        }
+    }
+    .OverviewContainer{
+        max-width: 95%;
+        gap: 30px;
+        .VideoFrame{
+            flex-basis: 50%;
+            iframe{
+                width: 100%;
+            }
+        }
+        .OverviewContent{
+            flex-basis: 50%;
+            p{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .DetailContainer{
+        max-width: 90%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width:850px){
+    .OverviewContainer{
+        flex-direction: column;
+        max-width: 85%;
+        .VideoFrame{
+            flex-basis: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width:550px){
+    .mainDescription{
+        flex-direction: column;
+        gap: 20px;
+        .DescriptionContainer{
+            ul{
+                li{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .OverviewContainer{
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width:300px){
+    .mainDescription{
+        .DescriptionContainer{
+        padding: 20px 20px;
+
+            p{
+                max-width: 100%;
+            }
+        }
+    }
+    .OverviewContainer{
+        max-width: 95%;
+    }
+}
+
+

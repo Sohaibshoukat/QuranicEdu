@@ -250,6 +250,9 @@ p{
 }
 
 @media screen and (max-width: 300px) {
+    p {
+        font-size: 14px;
+    }
     .ContainerStory{
         padding:50px 10px;
         width: 90%;

@@ -87,7 +87,7 @@ const Index = () => {
                 setShowAlert(true)
                 setTimeout(() => {
                     setShowAlert(false)
-                }, 3000);
+                }, 5000);
             }
 
         } catch (error) {
