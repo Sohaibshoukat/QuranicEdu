@@ -1,52 +1,65 @@
-.cardContainer {
-  width: 100%;
-  position: relative;
-  border-radius: 10px;
+.cardFlip {
   height: 100%;
+  transition: 0.5s all 600ms;
 
-  .back {
-    display: none;
-    backface-visibility: hidden;
-  }
+  .cardContainer {
 
-  .image {
-    height: 100%;
+    transition: transform 600ms;
+    transform: rotateY(0deg);
+    /* Revert to the original state */
+    background-color: transparent;
+    transform-style: preserve-3d;
+    
+
     width: 100%;
+    position: relative;
     border-radius: 10px;
+    height: 100%;
 
-    img {
+    .back {
+      display: none;
+      backface-visibility: hidden;
+    }
+
+    .image {
       height: 100%;
       width: 100%;
       border-radius: 10px;
-      object-fit: cover;
-    }
-  }
 
-  .bar {
-    position: absolute;
-    bottom: 15%;
-    background: linear-gradient(180deg, #3e4b75 0%, #192440 100%);
-    width: -webkit-fill-available;
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
-    align-items: center;
-    padding: 5px 15px;
-    height: 60px;
-
-    h4 {
-      color: white;
-      font-size: 28px;
-    }
-
-    .Logoimg {
-      position: relative;
-      min-width: 100px;
-
-      .logo {
-        position: absolute;
+      img {
+        height: 100%;
         width: 100%;
-        bottom: -20px;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+
+    .bar {
+      position: absolute;
+      bottom: 15%;
+      background: linear-gradient(180deg, #3e4b75 0%, #192440 100%);
+      width: -webkit-fill-available;
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      align-items: center;
+      padding: 5px 15px;
+      height: 60px;
+
+      h4 {
+        color: white;
+        font-size: 28px;
+      }
+
+      .Logoimg {
+        position: relative;
+        min-width: 100px;
+
+        .logo {
+          position: absolute;
+          width: 100%;
+          bottom: -20px;
+        }
       }
     }
   }
@@ -62,156 +75,364 @@
 
     .back {
       display: flex;
+      flex-direction: column;
       text-align: center;
       align-items: center;
       justify-content: center;
-
       position: absolute;
-      top: 15%;
+      top: 0%;
       width: -webkit-fill-available;
       gap: 10px;
-      padding: 5px 15px;
-      height: 60px;
-      margin-top: 1.5rem;
-
+      height: 100%;
       transform: rotateY(180deg);
-
-      color: white;
       
+      h5 {
+        color: white;
+        font-size: 26px;
+      }
 
+      .btnDetail {
+        border-radius: 1100px;
+        border: none;
+        padding: 20px 30px;
+        background: linear-gradient(180deg, #3E4B75 0%, #192440 100%);
+        color: white;
+        cursor: pointer;
+        font-size: 26px;
+        font-weight: 700;
+      }
     }
 
     .bar {
       backface-visibility: hidden;
-      
     }
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .cardContainer {
-    .bar {
-      bottom: 10%;
-      gap: 10px;
-      align-items: center;
-      padding: 5px 20px;
-      height: 60px;
+@media screen and (min-width: 1024px) {
+  .cardFlip {
+    .cardContainer {
+      .bar {
+        bottom: 10%;
+        gap: 10px;
+        align-items: center;
+        padding: 5px 20px;
+        height: 60px;
 
-      h4 {
-        font-size: 22px;
-      }
-
-      .Logoimg {
-        position: relative;
-        min-width: 90px;
-
-        .logo {
-          width: 100%;
+        h4 {
+          font-size: 22px;
         }
+
+        .Logoimg {
+          position: relative;
+          min-width: 90px;
+
+          .logo {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .cardFlip:hover {
+    .cardContainer {
+  
+      .back {
+        padding: 0px 20px;
+        h5 {
+          font-size: 20px;
+        }
+  
+        .btnDetail {
+          padding: 10px 15px;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+  
+      .bar {
+        backface-visibility: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .cardFlip {
+    .cardContainer {
+      .bar {
+        bottom: 10%;
+        gap: 5px;
+        height: 50px;
+
+        h4 {
+          color: white;
+          font-size: 16px;
+        }
+
+        .Logoimg {
+          position: relative;
+          min-width: 70px;
+
+          .logo {
+            width: 100%;
+            bottom: -12px;
+          }
+        }
+      }
+    }
+  }
+  .cardFlip:hover {
+    .cardContainer {  
+      .back {
+
+        h5 {
+          font-size: 18px;
+        }
+  
+        .btnDetail {
+          padding: 10px 20px;
+          font-size: 20px;
+        }
+      }
+  
+      .bar {
+        backface-visibility: hidden;
       }
     }
   }
 }
 
 @media screen and (max-width: 850px) {
-  .cardContainer {
-    .bar {
-      bottom: 10%;
-      gap: 5px;
-      height: 50px;
+  .cardFlip {
+    .cardContainer {
+      .bar {
+        bottom: 10%;
+        gap: 5px;
+        height: 50px;
 
-      h4 {
-        color: white;
-        font-size: 18px;
-      }
-
-      .Logoimg {
-        position: relative;
-        min-width: 70px;
-
-        .logo {
-          width: 100%;
-          bottom: -12px;
+        h4 {
+          color: white;
+          font-size: 16px;
         }
+
+        .Logoimg {
+          position: relative;
+          min-width: 70px;
+
+          .logo {
+            width: 100%;
+            bottom: -12px;
+          }
+        }
+      }
+    }
+  }
+  .cardFlip:hover {
+    .cardContainer {  
+      .back {
+
+        h5 {
+          font-size: 18px;
+        }
+  
+        .btnDetail {
+          padding: 10px 20px;
+          font-size: 20px;
+        }
+      }
+  
+      .bar {
+        backface-visibility: hidden;
       }
     }
   }
 }
 
 @media screen and (max-width: 780px) {
-  .cardContainer {
-    .bar {
-      bottom: 20%;
-      gap: 10px;
-      height: 80px;
+  .cardFlip {
+    .cardContainer {
+      .bar {
+        bottom: 20%;
+        gap: 10px;
+        height: 80px;
 
-      h4 {
-        color: white;
-        font-size: 24px;
-      }
-
-      .Logoimg {
-        position: relative;
-        min-width: 100px;
-
-        .logo {
-          width: 100%;
-          bottom: -12px;
+        h4 {
+          color: white;
+          font-size: 24px;
         }
+
+        .Logoimg {
+          position: relative;
+          min-width: 100px;
+
+          .logo {
+            width: 100%;
+            bottom: -12px;
+          }
+        }
+      }
+    }
+  }
+  .cardFlip:hover {
+    .cardContainer {  
+      .back {
+        padding: 10px 10px;
+        h5 {
+          font-size: 22px;
+        }
+  
+        .btnDetail {
+          padding: 10px 20px;
+          font-size: 18px;
+        }
+      }
+  
+      .bar {
+        backface-visibility: hidden;
       }
     }
   }
 }
 
 @media screen and (max-width: 550px) {
-  .cardContainer {
-    .bar {
-      padding: 0px 15px;
-      bottom: 10%;
-      gap: 5px;
-      height: 50px;
+  .cardFlip {
+    .cardContainer {
+      .bar {
+        padding: 0px 15px;
+        bottom: 10%;
+        gap: 5px;
+        height: 50px;
 
-      h4 {
-        color: white;
-        font-size: 16px;
-        font-weight: 400;
-      }
-
-      .Logoimg {
-        position: relative;
-        min-width: 65px;
-
-        .logo {
-          width: 100%;
-          bottom: -8px;
+        h4 {
+          color: white;
+          font-size: 16px;
+          font-weight: 400;
         }
+
+        .Logoimg {
+          position: relative;
+          min-width: 65px;
+
+          .logo {
+            width: 100%;
+            bottom: -8px;
+          }
+        }
+      }
+    }
+  }
+  .cardFlip:hover {
+    .cardContainer {  
+      .back {
+        padding: 5px 15px;
+        h5 {
+          font-size: 18px;
+        }
+  
+        .btnDetail {
+          padding: 10px 15px;
+          font-size: 18px;
+        }
+      }
+  
+      .bar {
+        backface-visibility: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardFlip {
+    .cardContainer {
+      .bar {
+        padding: 0px 15px;
+        bottom: 10%;
+        gap: 5px;
+        height: 50px;
+
+        h4 {
+          color: white;
+          font-size: 16px;
+          font-weight: 400;
+        }
+
+        .Logoimg {
+          position: relative;
+          min-width: 65px;
+
+          .logo {
+            width: 100%;
+            bottom: -8px;
+          }
+        }
+      }
+    }
+  }
+  .cardFlip:hover {
+    .cardContainer {  
+      .back {
+        padding: 5px 15px;
+        h5 {
+          font-size: 22px;
+        }
+  
+        .btnDetail {
+          padding: 10px 15px;
+          font-size: 20px;
+        }
+      }
+  
+      .bar {
+        backface-visibility: hidden;
       }
     }
   }
 }
 
 @media screen and (max-width: 300px) {
-  .cardContainer {
-    .bar {
-      padding: 5px 15px;
-      bottom: 15%;
-      gap: 10px;
-      height: 50px;
+  .cardFlip {
+    .cardContainer {
+      .bar {
+        padding: 5px 15px;
+        bottom: 15%;
+        gap: 10px;
+        height: 50px;
 
-      h4 {
-        color: white;
-        font-size: 20px;
-        font-weight: 700;
-      }
-
-      .Logoimg {
-        position: relative;
-        min-width: 80px;
-
-        .logo {
-          width: 100%;
-          bottom: -10px;
+        h4 {
+          color: white;
+          font-size: 20px;
+          font-weight: 700;
         }
+
+        .Logoimg {
+          position: relative;
+          min-width: 80px;
+
+          .logo {
+            width: 100%;
+            bottom: -10px;
+          }
+        }
+      }
+    }
+  }
+  .cardFlip:hover {
+    .cardContainer {  
+      .back {
+        padding: 5px 15px;
+        h5 {
+          font-size: 18px;
+        }
+  
+        .btnDetail {
+          font-size: 18px;
+        }
+      }
+  
+      .bar {
+        backface-visibility: hidden;
       }
     }
   }

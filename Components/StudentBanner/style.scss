@@ -9,9 +9,9 @@
     .Content {
         margin: auto;
         width: 90%;
-        color: white;
 
         h2 {
+            color: white;
             width: 70%;
             margin: auto;
             font-size: 40px;
@@ -27,7 +27,13 @@
             .Set {
                 text-align: center;
 
+                h3 {
+                    color: white;
+                }
+
                 h5 {
+                    color: white;
+
                     font-weight: 500;
                 }
             }
@@ -85,6 +91,7 @@
 @media screen and (max-width: 550px) {
     .StudnetContainer {
         padding: 50px 30px;
+
         .Content {
             width: 100%;
 

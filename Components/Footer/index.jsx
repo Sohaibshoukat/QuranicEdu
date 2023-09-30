@@ -19,7 +19,7 @@ const index = () => {
                 <div className="container">
                     <Link href={"/"}>
                         <div className="logo">
-                            <img src="./logo.webp" alt="" />
+                            <img src="../logo.webp" alt="" />
                         </div>
                     </Link>
                     <div className='Links'>
@@ -43,13 +43,13 @@ const index = () => {
                         <ul>
                             <li className='contact'>
                                 <div className="image">
-                                    <img src="./assets/Images/gmail.webp" alt="" />
+                                    <img src="../assets/Images/gmail.webp" alt="" />
                                 </div>
                                 qarikhalid.quranicedu@gmail.com
                             </li>
                             <li className='contact'>
                                 <div className="image" onClick={handleButtonClick}>
-                                    <img src="./assets/Images/whatsapp.webp" alt="" />
+                                    <img src="../assets/Images/whatsapp.webp" alt="" />
                                 </div>
                                 +92 331 7388258
                             </li>

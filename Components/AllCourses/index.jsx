@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import "./style.scss"
 import { CourseOverview } from "@/Content/index"
 import Card from "@/Components/Card"
+import Link from 'next/link'
 
 const index = () => {
     const [screenWidth, setScreenWidth] = useState(null);
@@ -34,7 +35,7 @@ const index = () => {
                         return (
                             <div className="CourseContain containright">
                                 <div className="Card">
-                                    <Card title={item.Name} imageurl={item.Image} />
+                                    <Card title={item.Name} imageurl={item.Image} overView={item.Overview} ID={item.ID} />
                                 </div>
                                 <div className="contentData">
                                     <h3>{item.Name}</h3>
@@ -42,7 +43,9 @@ const index = () => {
                                         <p>{item2}</p>
                                     ))
                                     }
-                                    <button className="btn">Enroll Know</button>
+                                    <Link href={"/Enroll"}>
+                                        <button className="btn">Enroll Know</button>
+                                    </Link>
                                 </div>
                             </div>
                         )
@@ -55,10 +58,12 @@ const index = () => {
                                         <p>{item2}</p>
                                     ))
                                     }
-                                    <button className="btn">Enroll Know</button>
+                                    <Link href={"/Enroll"}>
+                                        <button className="btn">Enroll Know</button>
+                                    </Link>
                                 </div>
                                 <div className="Card">
-                                    <Card title={item.Name} imageurl={item.Image} />
+                                    <Card title={item.Name} imageurl={item.Image} overView={item.Overview} />
                                 </div>
                             </div>
                         )
@@ -67,7 +72,7 @@ const index = () => {
                     return (
                         <div className="CourseContain containright">
                             <div className="Card">
-                                <Card title={item.Name} imageurl={item.Image} />
+                                <Card title={item.Name} imageurl={item.Image} overView={item.Overview} />
                             </div>
                             <div className="contentData">
                                 <h3>{item.Name}</h3>
@@ -75,7 +80,9 @@ const index = () => {
                                     <p>{item2}</p>
                                 ))
                                 }
-                                <button className="btn">Enroll Know</button>
+                                <Link href={"/Enroll"}>
+                                        <button className="btn">Enroll Know</button>
+                                </Link>
                             </div>
                         </div>
                     )

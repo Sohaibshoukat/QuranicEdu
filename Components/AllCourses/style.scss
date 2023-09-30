@@ -1,5 +1,5 @@
 .containerCourse{
-    max-width: 80%;
+    max-width: 70%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -44,9 +44,10 @@
     }
 }
 
+
 @media screen and (min-width: 1024px) {
     .containerCourse{
-        max-width: 90%;
+        max-width: 70%;
         .CourseContain{
             display: grid;
             grid-template-rows: auto;
