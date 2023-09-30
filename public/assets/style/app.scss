@@ -3,10 +3,14 @@
 *{
     margin:0;
     padding: 0;
+    color: #192440;
+
     font-family: 'Alegreya Sans SC', sans-serif;
 }
 body{
     font-family: 'Alegreya Sans SC', sans-serif;
+    color: #192440;
+
 }
 
 h1,h2,h3,h4,h5,h6,a,li{
@@ -47,13 +51,14 @@ p{
         text-align: center;
         width: 60%;
         margin: auto;
+        color: #192440;
         margin-bottom: 40px;
     }
     p{
         text-align: center;
         width: 60%;
         margin: auto;
-        // margin-top: -30px;
+        color: #192440;
         margin-bottom: 30px;
     }
     .TextSection{

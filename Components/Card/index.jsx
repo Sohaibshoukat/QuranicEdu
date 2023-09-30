@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.scss";
+import Link from "next/link";
 
-const Card = ({ title, imageurl, overView }) => {
+const Card = ({ID, title, imageurl, overView }) => {
   return (
     <div className="cardFlip">
       <div className="cardContainer">
@@ -10,7 +11,12 @@ const Card = ({ title, imageurl, overView }) => {
         </div>
 
         <div className="back">
-          <p>{overView}</p>
+          <h5>{overView}</h5>
+          <Link href={`/Course/${ID}`}>
+            <button className="btnDetail">
+              See Details
+            </button>
+          </Link>
         </div>
 
         <div className="bar">

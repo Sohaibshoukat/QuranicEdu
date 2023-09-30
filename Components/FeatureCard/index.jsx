@@ -6,22 +6,22 @@ const FeatureCard = ({buttonText}) => {
 <div className="FeatureCardcontainer">
 
     <div className="row">
-        <img src="./assets/Images/free.png"></img>
+        <img src="../assets/Images/free.png"></img>
         <p>3-days Free Trial</p>
     </div>
 
     <div className="row">
-        <img src="./assets/Images/male.png"></img>
+        <img src="../assets/Images/male.png"></img>
         <p>Male and Female tutors</p>
     </div>
 
     <div className="row">
-        <img src="./assets/Images/duration.png"></img>
+        <img src="../assets/Images/duration.png"></img>
         <p>30-minutes duration</p>
     </div>
 
     <div className="row">
-        <img src="./assets/Images/age.png"></img>
+        <img src="../assets/Images/age.png"></img>
         <p>No age limit</p>
     </div>
 
