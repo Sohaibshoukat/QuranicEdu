@@ -8,6 +8,9 @@ const index = () => {
     const phoneNumber = '+923317388258';
     const message = 'Assalam-o-Alaikum, I want to learn quran';
     const whatsappDeepLink = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}`;
+    const SecondphoneNumber = '+923054672478';
+    const Secondmessage = 'Assalam-o-Alaikum, I want to learn quran';
+    const SecondwhatsappDeepLink = `https://api.whatsapp.com/send/?phone=${SecondphoneNumber}&text=${Secondmessage}`;
     const emailAddress = 'qarikhalid.quranicedu@gmail.com';
     const emailSubject = 'Inquiry about Quran courses';
     const emailBody = 'Assalam-o-Alaikum, I am interested in learning Quranic courses.';
@@ -21,6 +24,10 @@ const index = () => {
     // Function to handle the button click
     const handleButtonClick = () => {
         window.open(whatsappDeepLink, '_blank');
+    };
+
+    const handleSecondButtonClick = () => {
+        window.open(SecondwhatsappDeepLink, '_blank');
     };
     return (
         <>
@@ -59,6 +66,12 @@ const index = () => {
                                     <img src="../assets/Images/gmail.webp" alt="" />
                                 </div>
                                 qarikhalid.quranicedu@gmail.com
+                            </li>
+                            <li className='contact'>
+                                <div className="image" onClick={handleSecondButtonClick}>
+                                    <img src="../assets/Images/whatsapp.webp" alt="" />
+                                </div>
+                                +92 305 4672478
                             </li>
                             <li className='contact'>
                                 <div className="image" onClick={handleButtonClick}>

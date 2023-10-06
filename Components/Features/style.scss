@@ -1,70 +1,82 @@
 .FeatureContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 35rem;
     width:100% ;
+    padding: 100px 0px;
     background: url("../../public/assets/Images/BackgroundAbout.webp");
-    .imageContainer{
-        transform: rotate(45deg);
-        
-
-        img{
-            border-radius: 10%;
-        }
-        
-    }
-
-    .Features{
-        
-        
-        h2{
-            color: white;
-            font-size: 2rem;
-            text-align: center;
-            margin-bottom: 2%;
+    .InnerFeatureSection{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        .imageContainer{
+            flex-basis: 35%;
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: cover;
+                border-radius: 5px;
+            }
             
+        }
+    
+        .Features{
+            width: 100%;
+            flex-basis: 40%;
+            h4{
+                color: white;
+                text-align: left;
+                margin-bottom: 20px;
+                
+            }
         }
     }
 }
 
 
 
-@media screen and (max-width: 910px) {
-  
+@media screen and (max-width: 920px) {
     .FeatureContainer{
-    
-        flex-direction: column;
-        justify-content: space-around;
-        height: 65rem;
-    
-        .imageContainer{
-            padding-top: 15%;
-        }
-    .Features{
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
+        padding: 50px 0px;
+        .InnerFeatureSection{
+            width: 85%;
+        
+            .imageContainer{
+                flex-basis: 40%;
+            }
 
-  }
+            .Features{
+                width: 100%;
+                flex-basis: 55%;
+                h4{
+                    color: white;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
 }
   
 
 @media screen and (max-width: 550px){
     .FeatureContainer{
-        align-items: center;
-        justify-content: center;
-        height: 50rem;
-    
-    .imageContainer{
-
-        width: 60%;
-        img{
+        padding: 50px 0px;
+        .InnerFeatureSection{
+            flex-direction: column;
             width: 90%;
+            gap: 40px;
+            align-content: center;
+            .Features{
+                width: 100%;
+                flex-basis: 45%;
+                h4{
+                    font-size: 28px;
+                    color: white;
+                    text-align: left;
+                    margin-bottom: 20px;
+                }
+            }
         }
-     
     }
-}
 
   }

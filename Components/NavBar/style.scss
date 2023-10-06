@@ -24,6 +24,20 @@
             }
         }
 
+        .MobileMenuIcon{
+            color: white;
+    
+            .icon{
+                color: white;
+                font-size: 26px;
+                font-weight: 700;
+                transition: 1s ease-in-out;
+                path{
+                    color: white;
+                }
+            }
+        }
+        
         .navbar {
             flex-basis: 45%;
             font-size: 22px;
@@ -44,6 +58,27 @@
                     color: white;
                     text-decoration: none;
                 }
+            }
+        }
+    }
+    .Mobilenavbar {
+        background-color: #192440;
+        width: 100%;
+        padding: 30px;
+
+        ul {
+            list-style-type: none;
+            font-size: 20px;
+            color: white;
+            li {
+                cursor: pointer;
+                margin-bottom: 5px;
+                color: white;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
             }
         }
     }

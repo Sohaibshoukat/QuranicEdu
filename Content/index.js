@@ -191,7 +191,8 @@ export const CourseDetail = [
             "Practice Quranic calligraphy for a deeper connection to the text",
             "Engage in group Quranic discussions and reflections",
             "Foster a sense of discipline and devotion through daily Quranic studies",
-        ]
+        ],
+        IframeSrc:"https://www.youtube.com/embed/1L-DXFm4QpU"
 
     },
     {
@@ -216,7 +217,8 @@ export const CourseDetail = [
             "Discover the historical context and revelation stories behind various Quranic verses.",
             "Deepen your connection with Allah through heartfelt Quranic recitation."
 
-        ]
+        ],
+        IframeSrc:"https://www.youtube.com/embed/NDXW822wt88"
     },
     {
         Title: "Hifzul Quran",
@@ -238,7 +240,8 @@ export const CourseDetail = [
             "Exploration of the Ahkam al-Tajweed (rulings of Tajweed) and their practical application.",
             "Guidance on improving your breath control and rhythm during Quranic recitation.",
             "Tips and techniques for maintaining consistency in your Tajweed practice.",
-        ]
+        ],
+        IframeSrc:"https://www.youtube.com/embed/PHoZ-lcY_p4?si=BLR0opv6TBB5NMAY"
     },
     {
         Title: "Tafseer & Translation",
@@ -261,7 +264,8 @@ export const CourseDetail = [
             "Exploration of the linguistic and stylistic challenges faced in Quranic translation.",
             "Analysis of different translation styles and their impact on comprehension.",
             "Guidance on reading Tafseer texts alongside Quranic verses for deeper understanding."
-        ]
+        ],
+        IframeSrc:"https://www.youtube.com/embed/FV5GCas3qno"
     },
     {
         Title: "Namaz",
@@ -285,7 +289,8 @@ export const CourseDetail = [
             "In-depth examination of the Sunnah (traditions) and Mustahab (recommended) actions within each prayer.",
             "Understanding the significance of Qiblah and the direction of prayer toward the Kaaba in Mecca.",
             "Guidance on proper body posture, movements, and recitations during Namaz."
-        ]
+        ],
+        IframeSrc:"https://www.youtube.com/embed/sALmaqna7Io"
     },
     {
         Title: "Six Kalmas",
@@ -306,7 +311,9 @@ export const CourseDetail = [
             "Practical guidance on proper pronunciation and enunciation of the Arabic text.",
             "Transliteration of the Arabic text for learners who may not be familiar with Arabic script.",
             "In-depth analysis of the theological and spiritual themes contained within each Kalima.",
-            "Discussion of the role of the Six Kalimas in strengthening one's faith and connection with Allah."]
+            "Discussion of the role of the Six Kalimas in strengthening one's faith and connection with Allah."
+        ],
+        IframeSrc:"https://www.youtube.com/embed/qbaEAC7IOUI"
     },
     {
         Title: "Masnoon Izkar",
@@ -329,22 +336,44 @@ export const CourseDetail = [
             "Practical techniques for enhancing concentration and presence during Zikr.",
             "The therapeutic and stress-relief benefits of regular Zikr.",
             "Discussion on the best times and occasions for engaging in Zikr, such as during Salah (prayer), after Salah, and during moments of solitude."
-        ]
+        ],
+        IframeSrc:"https://www.youtube.com/embed/sALmaqna7Io"
     },
 ]
 
 
 export const OurTeachers = [
     {
-        Name: "Qari Khalid",
-        Description:"Qari Khalid is a renowned Quranic scholar and a respected member of our teaching team. His extensive background in Quranic studies and Tajweed has made him an invaluable asset to our institution. His commitment to helping students excel in their Quranic journey is evident in the progress and confidence they gain under his tutelage"
+        Name: "Qari Khalid Mehmood",
+        Description:"Qari Khalid is a renowned Quranic scholar and a respected member of our teaching team. His extensive background in Quranic studies and Tajweed has made him an invaluable asset to our institution. His commitment to helping students excel in their Quranic journey is evident in the progress and confidence they gain under his tutelage",
+        Image:1
     },
     {
-        Name: "Qari Asad",
-        Description:"Qari Asad is a highly experienced and dedicated teacher who brings a wealth of knowledge and expertise to our educational programs. With a deep passion for teaching, he has spent years honing his skills in Quranic recitation and Tajweed. Qari Asad is committed to helping learners of all ages master the art of Quranic recitation with precision and beauty."
+        Name: "Qari Asad Siraj",
+        Description:"Qari Asad is a highly experienced and dedicated teacher who brings a wealth of knowledge and expertise to our educational programs. With a deep passion for teaching, he has spent years honing his skills in Quranic recitation and Tajweed. Qari Asad is committed to helping learners of all ages master the art of Quranic recitation with precision and beauty.",
+        Image:3
     },
     {
         Name: "Femal Teacher",
-        Description: "Our female teacher is a nurturing and supportive presence in our educational programs, providing an inclusive and comfortable learning environment for female students. With a strong foundation in Quranic studies and Tajweed, she is passionate about empowering women of all ages to embark on their Quranic learning journey. Her approach is characterized by patience, empathy, and an understanding of the unique needs of female learners."
+        Description: "Our female teacher is a nurturing and supportive presence in our educational programs, providing an inclusive and comfortable learning environment for female students. With a strong foundation in Quranic studies and Tajweed, she is passionate about empowering women of all ages to embark on their Quranic learning journey. Her approach is characterized by patience, empathy, and an understanding of the unique needs of female learners.",
+        Image:7
+    }
+]
+
+export const Teachers = [
+    {
+        Name: "Qari Khalid Mehmood",
+        Description:"Qari Khalid is a renowned Quranic scholar and a respected member of our teaching team.",
+        Image:9
+    },
+    {
+        Name: "Qari Asad Siraj",
+        Description:"Qari Asad is a highly experienced and dedicated teacher who brings a wealth of knowledge and expertise to our educational programs.",
+        Image:10
+    },
+    {
+        Name: "Femal Teacher",
+        Description: "Our female teacher is a nurturing and supportive presence in our educational programs, providing an inclusive and comfortable learning environment for female students.",
+        Image:8
     }
 ]

@@ -9,14 +9,17 @@ const Feature = () => {
 
   return (
     <div className="FeatureContainer">
+      <div className="InnerFeatureSection">
         <div className="imageContainer">
             <img src="../assets/Images/HifzulQuran.webp"></img>
         </div>
 
         <div className="Features">
-            <h2>Features We provide</h2>
-            <FeatureCard buttonText="Browse our Case"/>
+            <h4>Features We provide</h4>
+            <FeatureCard buttonText="Browse our Case" ClickType="Courses"/>
         </div>
+
+      </div>
     </div>
   );
 };

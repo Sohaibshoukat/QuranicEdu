@@ -3,7 +3,7 @@ import React from 'react';
 import "./style.scss";
 
 const index = () => {
-    const phoneNumber = '+923317388258';
+    const phoneNumber = '+923054672478';
     const message = 'Assalam-o-Alaikum, I want to learn quran';
     const whatsappDeepLink = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}`;
     const emailAddress = 'qarikhalid.quranicedu@gmail.com';
@@ -22,15 +22,15 @@ const index = () => {
     };
   return (
     <div className="ContactSection">
-        <div className="ContactContainer">
-            <div className="Contactimage" onClick={handleButtonClick}>
+        <div className="ContactContainer" onClick={handleButtonClick}>
+            <div className="Contactimage">
                 <img src="./assets/Images/whatsapp.webp" alt="" />
             </div>
             <h4>Text us on Whatsapp</h4>
-            <p>+92 331 7388258</p>
+            <p>+92 305 4672478</p>
         </div>
-        <div className="ContactContainer">
-            <div className="Contactimage" onClick={handleEmailButtonClick}>
+        <div className="ContactContainer" onClick={handleEmailButtonClick}>
+            <div className="Contactimage">
                 <img src="./assets/Images/gmail.webp" alt="" />
             </div>
             <h4>Send Us An Email</h4>

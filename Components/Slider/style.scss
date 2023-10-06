@@ -55,7 +55,7 @@
         }
         @media screen and (max-width: 850px){
             .card{
-                width: 200px;
+            width: 200px;
             padding: 0px;
             border: none;
             height: 250px;
@@ -69,5 +69,11 @@
             height: 250px;
             }
         }
+    }
+}
+
+@media screen and (max-width: 550px){
+    .carousel{
+        max-width: 95%;
     }
 }
