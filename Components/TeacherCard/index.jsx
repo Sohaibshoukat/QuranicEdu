@@ -1,13 +1,13 @@
 import React from 'react'
 import "./style.scss"
 
-const TeacherCard = () => {
+const TeacherCard = ({item}) => {
 
   return (
     <div className='TeacherCardContainer'>
-        <img src='../assets/Images/HifzulQuran.webp'></img>
-        <h2>Qari Khalid</h2>
-        <p>Unlock the beauty of  Quranic recitation with our online Tajweed classes. </p>
+        <img src={`../assets/Images/${item.Image}.webp`}></img>
+        <h2>{item.Name}</h2>
+        <p>{item.Description}</p>
     </div>
   )
 }

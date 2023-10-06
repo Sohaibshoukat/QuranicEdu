@@ -17,7 +17,7 @@ const index = ({params}) => {
   return (
     <>
     <CourseDetailBanner Title={Data[0].Title}/>
-    <Overview Overview={Data[0].Overview}/>
+    <Overview Overview={Data[0].Overview} IframeSrc={Data[0].IframeSrc}/>
     <Description Title={Data[0].Title} About={Data[0].About} Learn={Data[0].Learning}/>
     <div className="DetailContainer">
       <h2>Related Courses</h2>

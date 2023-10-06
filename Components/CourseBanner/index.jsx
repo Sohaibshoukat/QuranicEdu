@@ -3,7 +3,7 @@ import React from 'react'
 import "./style.scss"
 
 const index = () => {
-      const phoneNumber = '+923317388258';
+      const phoneNumber = '+923054672478';
   const message = 'Assalam-o-Alaikum, I want to learn quran';
   const whatsappDeepLink = `https://api.whatsapp.com/send/?phone=${phoneNumber}&text=${message}`;
 

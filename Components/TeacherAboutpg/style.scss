@@ -6,7 +6,9 @@
 
     .TeacherCards{
         display: flex;
-        flex-direction: row;
+        .CardTeacher{
+            flex-basis: 33.333%;
+        }
     }
 }
 

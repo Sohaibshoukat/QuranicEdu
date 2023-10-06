@@ -102,6 +102,8 @@
 @media screen and (max-width: 1024px) {
     .DetailBanner {    
         .Innersection { 
+        width: 90%;
+
             .textSection {
                 flex-basis: 50%;
     
@@ -173,13 +175,13 @@
 
 @media screen and (max-width: 850px) {
     .DetailBanner {
-        height: 50vh;    
+        height: 60vh;    
          .Innersection {
              width: 90%;
              gap: 20px;
      
              .textSection {
-                 flex-basis: 55%;
+                 flex-basis: 50%;
                  text-align: left;
      
                  h1 {
@@ -192,7 +194,7 @@
              }
      
              .FeatureCard {
-                 flex-basis: 40%;
+                 flex-basis:50%;
              }
          }
      }
@@ -200,7 +202,7 @@
 
 @media screen and (max-width: 780px) {
     .DetailBanner {
-        height: 50vh;
+        height: 60vh;
         .Innersection {
             width: 90%;
             gap: 10px;
@@ -228,6 +230,41 @@
 @media screen and (max-width: 550px) {
     .DetailBanner {
         height: 40vh;
+        padding: 0px 20px;
+        padding-top: 10%;
+        .Innersection {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 95%;
+            gap: 10px;
+    
+            .textSection {
+                flex-basis: 100%;
+                text-align: left;
+    
+                h1 {
+                    font-size: 26px;
+                    margin-bottom: 10px;
+                }
+    
+                p {
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                }
+            }
+    
+            .FeatureCard {
+                display: none;
+                flex-basis: 45%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .DetailBanner {
+        height: 50vh;
         padding: 0px 20px;
         padding-top: 10%;
         .Innersection {
