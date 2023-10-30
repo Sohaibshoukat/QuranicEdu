@@ -5,9 +5,19 @@
     margin: 5%;
 
     .TeacherCards{
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: flex-start;
         .CardTeacher{
             flex-basis: 33.333%;
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .teachersAboutpg{
+        .TeacherCards{
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
@@ -18,8 +28,7 @@
        
     
         .TeacherCards{
-            display: flex;
-            flex-direction: column;
+            grid-template-columns: 1fr;
         }
     }
 }

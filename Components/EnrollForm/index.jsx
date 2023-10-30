@@ -84,6 +84,14 @@ const Index = () => {
             // Handle the response as needed (e.g., show a success message)
             const data = await response.json();
             if (data.success) {
+                setFormData({
+                    name: '',
+                    email: '',
+                    gender: '',
+                    country: '',
+                    teacherGender: '',
+                    course: '',
+                })
                 setShowAlert(true)
                 setTimeout(() => {
                     setShowAlert(false)

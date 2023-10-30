@@ -34,12 +34,6 @@ const FeatureCard = ({ buttonText, ClickType }) => {
                 <img src="../assets/Images/age.webp"></img>
                 <p>No age limit</p>
             </div>
-
-            <div className="row">
-                <img src="../assets/Images/duration.webp"></img>
-                <p>5 Days a week</p>
-            </div>
-
             <div className="row">
                 <img src="../assets/Images/duration.webp"></img>
                 <p>Skype and Zoom Lecture</p>

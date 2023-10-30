@@ -48,6 +48,9 @@ const Index = () => {
 
       const data = await response.json();
       if (data.success) {
+        setName("");
+        setEmail("");
+        setMessage("");
         setShowAlert(true)
         setTimeout(() => {
           setShowAlert(false)

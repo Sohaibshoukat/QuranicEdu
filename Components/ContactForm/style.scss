@@ -48,7 +48,7 @@
                 color: white;
 
                 &::placeholder {
-                    color: white;
+                    color: rgb(206, 206, 206);
                 }
             }
 
@@ -113,9 +113,11 @@
                 }
             }
 
-            .submit:hover {
+            .submit:hover{
                 transform: translateY(-7px);
-            }
+                border-radius: 5px;
+                transition: all .5s ease-in-out 0s;
+              }
         }
     }
 }
@@ -155,7 +157,7 @@
                     color: white;
 
                     &::placeholder {
-                        color: white;
+                        color: rgb(206, 206, 206);
                     }
                 }
 
@@ -220,9 +222,11 @@
                     }
                 }
 
-                .submit:hover {
+                .submit:hover{
                     transform: translateY(-7px);
-                }
+                    border-radius: 5px;
+                    transition: all .5s ease-in-out 0s;
+                  }
             }
         }
     }
@@ -263,7 +267,7 @@
                     color: white;
 
                     &::placeholder {
-                        color: white;
+                        color: rgb(206, 206, 206);
                     }
                 }
 
@@ -328,9 +332,11 @@
                     }
                 }
 
-                .submit:hover {
+                .submit.btn:hover{
                     transform: translateY(-7px);
-                }
+                    border-radius: 5px;
+                    transition: all .5s ease-in-out 0s;
+                  }
             }
         }
     }
@@ -370,7 +376,7 @@
                     color: white;
 
                     &::placeholder {
-                        color: white;
+                        color: rgb(206, 206, 206);
                     }
                 }
 
@@ -435,9 +441,11 @@
                     }
                 }
 
-                .submit:hover {
+                .submit:hover{
                     transform: translateY(-7px);
-                }
+                    border-radius: 5px;
+                    transition: all .5s ease-in-out 0s;
+                  }
             }
         }
     }
@@ -475,7 +483,7 @@
                     color: white;
 
                     &::placeholder {
-                        color: white;
+                        color: rgb(206, 206, 206);
                     }
                 }
 
@@ -540,9 +548,6 @@
                     }
                 }
 
-                .submit:hover {
-                    transform: translateY(-7px);
-                }
             }
         }
     }

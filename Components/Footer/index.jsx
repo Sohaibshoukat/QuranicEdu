@@ -61,19 +61,19 @@ const index = () => {
                     <div className="Links">
                         <h4>Contact us</h4>
                         <ul>
-                            <li className='contact'>
+                            <li key="1" className='contact'>
                                 <div className="image" onClick={handleEmailButtonClick}>
                                     <img src="../assets/Images/gmail.webp" alt="" />
                                 </div>
                                 qarikhalid.quranicedu@gmail.com
                             </li>
-                            <li className='contact'>
+                            <li key="2" className='contact'>
                                 <div className="image" onClick={handleSecondButtonClick}>
                                     <img src="../assets/Images/whatsapp.webp" alt="" />
                                 </div>
                                 +92 305 4672478
                             </li>
-                            <li className='contact'>
+                            <li key="3" className='contact'>
                                 <div className="image" onClick={handleButtonClick}>
                                     <img src="../assets/Images/whatsapp.webp" alt="" />
                                 </div>

@@ -60,7 +60,7 @@
                     color: white;
                     font-size: 22px;
                     border: none;
-
+                    
                     &::placeholder {
                         color: white;
                     }
@@ -132,9 +132,11 @@
             }
         }
 
-        .btn:hover {
+        .btn:hover{
             transform: translateY(-7px);
-        }
+            border-radius: 5px;
+            transition: all .5s ease-in-out 0s;
+          }
     }
 }
 

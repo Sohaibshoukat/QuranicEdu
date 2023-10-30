@@ -13,8 +13,8 @@ const Description = ({ Title, About, Learn }) => {
             <div className="DescriptionContainer">
                 <h4>Here you will Learn</h4>
                 <ul>
-                    {Learn.map(item => (
-                        <li>{item}</li>
+                    {Learn.map((item,index) => (
+                        <li key={index}>{item}</li>
                     ))}
                 </ul>
             </div>

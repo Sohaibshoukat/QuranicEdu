@@ -6,9 +6,7 @@
     margin-bottom: 5%;
 
     img{
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        -webkit-border-radius: 50%;
+        border-radius:25px;
          width: 200px;
          height: 200px;
          
@@ -19,8 +17,8 @@
         margin-top: 2%;
     }
     p{
-        padding-right: 10% ;
-        padding-left: 10%;
+        padding-right: 10px ;
+        padding-left: 10px;
         margin-top: 2%;
         text-align: center;
     }
@@ -39,8 +37,8 @@
 @media screen and (max-width: 680px){
     .TeacherCardContainer{
         img{
-             width: 100px;
-             height: 100px;
+             width: 150px;
+             height: 150px;
              
         }
      
@@ -58,8 +56,8 @@
 @media screen and (max-width:300px){
     .TeacherCardContainer{
         img{
-             width: 75px;
-             height:75px;
+             width: 100px;
+             height:100px;
              
         }
      

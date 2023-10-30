@@ -61,7 +61,7 @@ const index = ({ type }) => {
                         return (
                             <div className="CourseContain containright">
                                 <div className="ImageCard">
-                                    <img src="../assets/Images/Namaz.webp" alt="" />
+                                    <img src={`../assets/Images/${item.Image}.webp`} alt="" />
                                 </div>
                                 <div className="contentData">
                                     <h3>{item.Name}</h3>

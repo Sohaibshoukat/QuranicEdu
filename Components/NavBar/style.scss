@@ -5,6 +5,7 @@
     position: fixed;
     top: 40px;
     z-index: 100;
+
     .container {
         height: 90px;
         width: 95%;
@@ -24,20 +25,21 @@
             }
         }
 
-        .MobileMenuIcon{
+        .MobileMenuIcon {
             color: white;
-    
-            .icon{
+
+            .icon {
                 color: white;
                 font-size: 26px;
                 font-weight: 700;
                 transition: 1s ease-in-out;
-                path{
+
+                path {
                     color: white;
                 }
             }
         }
-        
+
         .navbar {
             flex-basis: 45%;
             font-size: 22px;
@@ -61,6 +63,7 @@
             }
         }
     }
+
     .Mobilenavbar {
         background-color: #192440;
         width: 100%;
@@ -70,6 +73,7 @@
             list-style-type: none;
             font-size: 20px;
             color: white;
+
             li {
                 cursor: pointer;
                 margin-bottom: 5px;
@@ -83,6 +87,15 @@
         }
     }
 
+}
+
+
+.selected {
+    border-radius: 5px;
+    width: fit-content;
+    padding: 3px 10px;
+    border-bottom: 5px solid;
+    background: linear-gradient(180deg, #3e4b75 0%, #192440 100%);
 }
 
 @media screen and (max-width: 1024px) {
@@ -146,40 +159,43 @@
 
 @media screen and (max-width: 600px) {
 
-    .MobileMenuIcon{
+    .MobileMenuIcon {
         color: white;
 
-        .icon{
+        .icon {
             color: white;
             font-size: 26px;
             font-weight: 700;
             transition: 1s ease-in-out;
-            path{
+
+            path {
                 color: white;
             }
         }
     }
-        .Mobilenavbar {
-            background-color: #192440;
-            width: 100%;
-            padding: 30px;
 
-            ul {
-                list-style-type: none;
-                font-size: 18px;
+    .Mobilenavbar {
+        background-color: #192440;
+        width: 100%;
+        padding: 30px;
+
+        ul {
+            list-style-type: none;
+            font-size: 18px;
+            color: white;
+
+            li {
+                cursor: pointer;
+                margin-bottom: 5px;
                 color: white;
-                li {
-                    cursor: pointer;
-                    margin-bottom: 5px;
-                    color: white;
-                }
+            }
 
-                a {
-                    color: white;
-                    text-decoration: none;
-                }
+            a {
+                color: white;
+                text-decoration: none;
             }
         }
+    }
 }
 
 @media screen and (max-width: 300px) {

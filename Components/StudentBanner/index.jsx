@@ -21,7 +21,7 @@ const index = () => {
         <div className="Content">
             <h2>Bringing you a positive and awakening One-on-One Learning Environment</h2>
             <div className="Data">
-              {Data.map(item=>(
+              {Data.map((item)=>(
                 <div className="Set">
                   <h3>{item.Count}</h3>
                   <h5>{item.Title}</h5>

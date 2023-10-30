@@ -8,21 +8,28 @@
     align-items: center;
     padding-left:50px;
     .Section{
-        max-width: 40%;
+        max-width: 45%;
         text-align: center;
         .bisImage{
-            margin-bottom: 30px;
+            text-align: -webkit-center;
+            margin-bottom: 20px;
             img{
-                max-width: 300px;
+                max-width: 200px;
                 width: 100%;
             }
         }
         .HaditImage{
-            margin-bottom: 30px;
+            text-align: -webkit-center;
+            margin-bottom: 20px;
+            img{
+                max-width: 350px;
+                width: 100%;
+            }
         }
         p{
-            font-size: 26px;
+            font-size: 24px;
             color: white;
+            font-weight:600;
         }
     }
 }

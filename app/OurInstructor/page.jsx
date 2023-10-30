@@ -9,7 +9,7 @@ const page = () => {
       <InstructorBanner />
       <div className="ContainerStory">
         <h2>Our Teachers</h2>
-        <p>Unlock the beauty of  Quranic recitation with our online Tajweed classes while embracing Norani Qaida,  Nazrah Qaidaz Hifzul Quran, Namaz, Six Kalmas, Tafseer and translation , Masnoon Izkar. </p>
+        <p>Unlock the beauty of  Quranic recitation with our online Tajweed classes while embracing Norani Qaida,  Nazrah Quran, Hifzul Quran, Namaz, Six Kalmas, Tafseer and translation , Masnoon Izkar. </p>
         <AllCourses type="Teachers"/>
       </div>
       <div className="ContainerStory">

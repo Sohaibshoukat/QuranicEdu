@@ -354,7 +354,7 @@ export const OurTeachers = [
         Image:3
     },
     {
-        Name: "Femal Teacher",
+        Name: "Female Teacher",
         Description: "Our female teacher is a nurturing and supportive presence in our educational programs, providing an inclusive and comfortable learning environment for female students. With a strong foundation in Quranic studies and Tajweed, she is passionate about empowering women of all ages to embark on their Quranic learning journey. Her approach is characterized by patience, empathy, and an understanding of the unique needs of female learners.",
         Image:7
     }
@@ -372,7 +372,7 @@ export const Teachers = [
         Image:10
     },
     {
-        Name: "Femal Teacher",
+        Name: "Female Teacher",
         Description: "Our female teacher is a nurturing and supportive presence in our educational programs, providing an inclusive and comfortable learning environment for female students.",
         Image:8
     }

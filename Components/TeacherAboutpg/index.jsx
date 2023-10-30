@@ -9,7 +9,7 @@ const TeacherAboutpg = () => {
       <div className='teachersAboutpg'>
       <h2>About Our Tecahers</h2>
       <div className='TeacherCards'>
-        {Teachers.map(item=>(
+        {Teachers.map((item)=>(
           <div className="CardTeacher">
             <TeacherCard item={item}/>
           </div>

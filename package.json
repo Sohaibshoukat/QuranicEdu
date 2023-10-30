@@ -3,13 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.8.1",
+    "@fontsource-variable/raleway": "^5.0.13",
+    "@fontsource/alegreya-sans-sc": "^5.0.8",
     "autoprefixer": "10.4.16",
     "axios": "^1.5.1",
     "bootstrap": "^5.3.2",

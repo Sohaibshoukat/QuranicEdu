@@ -4,6 +4,9 @@ import ParaText from "@/Components/ParaText"
 import StudentBanner from "@/Components/StudentBanner";
 import StoryCard from "@/Components/StoryVideo";
 import Slider from "@/Components/Slider";
+import '@fontsource/alegreya-sans-sc/400.css';
+import '@fontsource/alegreya-sans-sc/700.css';
+import '@fontsource-variable/raleway';
 
 export default function Home() {
   return (

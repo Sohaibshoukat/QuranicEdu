@@ -43,6 +43,11 @@ p{
     font-weight: 400;
 }
 
+::selection{
+    background-color: #2fffc1;
+    color: white;
+}
+
 .ContainerStory{
     padding: 100px 50px;
     width: 80%;
